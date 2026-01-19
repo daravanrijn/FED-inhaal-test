@@ -12,81 +12,75 @@
 </head>
 <body>
     <header>
-        <h1>
-            <a href="./index.html">
-                <img src="images-homepage/nederland-coca-cola-logo_black_600x96(1).png" alt="Coca-Cola Nederland logo">
-            </a>
-        </h1>
+        <h1><a href="./index.html"><img src="images-homepage/nederland-coca-cola-logo_black_600x96(1).png" alt="Coca-Cola Nederland logo"></a></h1>
 
-        <a href="#">Aanmelden</a>
+        <a aria-label="Knop om je aan te melden voor een account van The Coca-Cola Company" href="#">Aanmelden</a>
 
-        <button aria-label="Menu openen"><img src="images-homepage/menu.png" alt="Menu openen"></button>
+        <button><img src="images-homepage/menu.png" alt="Hamburgermenu icoon, klik hierop om het menu te openen."></button>
 
-        <nav aria-label="Hoofdmenu">
+        <nav>
+            <button aria-label="Menu sluiten">✕</button>
+            <ul>
+                <li><a href="#">Merken</a></li>
 
-        <button aria-label="Menu sluiten">✕</button>
-            
-        <ul>
-            <li><a href="#">Merken</a></li>
+                <li>
+                    <details>
+                        <summary>Ontdek</summary>
+                        <ul>
+                            <li><a href="#">Jack Daniel's & Coca-Cola</a></li>
+                            <li><a href="./theathletescode.html">De Athletes Code</a></li>
+                            <li><a href="#">Coca-Cola App</a></li>
+                        </ul>
+                    </details>
+                </li>
 
-            <li>
-                <details>
-                    <summary>Ontdek</summary>
-                    <ul>
-                        <li><a href="#">Jack Daniel's & Coca-Cola</a></li>
-                        <li><a href="./theathletescode.html">De Athletes Code</a></li>
-                        <li><a href="#">Coca-Cola App</a></li>
-                    </ul>
-                </details>
-            </li>
-
-            <li>
-                <details>
-                    <summary>Impact</summary>
-                    <ul>
-                        <li><a href="#">Duurzaamheid</a></li>
-                        <li><a href="#">Maatschappij</a></li>
-                        <li><a href="#">This is Happening</a></li>
-                        <li><a href="#">Geproduceerd in Nederland</a></li>
-                    </ul>
-                </details>
+                <li>
+                    <details>
+                        <summary>Impact</summary>
+                        <ul>
+                            <li><a href="#">Duurzaamheid</a></li>
+                            <li><a href="#">Maatschappij</a></li>
+                            <li><a href="#">This is Happening</a></li>
+                            <li><a href="#">Geproduceerd in Nederland</a></li>
+                        </ul>
+                    </details>
+                </li>
 
                 <li><a href="#">Meld je aan</a></li>
             </ul>
-
-            <a href="#">Aanmelden</a>
-            <a href="#">Inloggen</a>
+            <a aria-label="Knop om je aan te melden voor een account van The Coca-Cola Company" href="#">Aanmelden</a>
+            <a aria-label="Knop om in te loggen bij je account van The Coca-Cola Company" href="#">Inloggen</a>
         </nav>
     </header>
 
     <main>
         <ul>
-            <li>
+            <li id="kaart1">
                 <section>
                     <h2>De Digitale Wereld van Coca-Cola</h2>
                     <p>Blijf op de hoogte van exclusieve aanbiedingen, evenementen en beloningen van Coca-Cola!</p>
-                    <a href="#">Ontdek meer</a>
-                    <img src="images-homepage/meisje_mobile.webp" alt="">
+                    <a aria-label="Knop om naar een pagina te gaan met meer informatie over de Coca-Cola app" href="#">Ontdek meer</a>
+                    <img src="images-homepage/meisje_mobile.webp" alt="Een afbeelding van een vrouw met koptelefoon die ontspannen op een bank ligt en een smartphone gebruikt. Een telefoonscherm wordt vergroot afgebeeld. Hierop wordt de app van coca-cola getoond. Er zweven teksten en iconen naast die tonen dat je prijzen kunt winnen, games kunt spelen en nieuws kunt volgen. Over de afbeelding zit een filter met een donkere gloed in het groen en rood.">
                 </section>
             </li>
 
-            <li>
+            <li id="kaart2">
                 <section>
                     <h2>Lokaal en duurzaam gebotteld in Brabant</h2>
-                    <p>Wist je dat 85% van alle<br>
-                       Coca-Cola dranken in Nederland<br>
-                       lokaal wordt geproduceerd in<br>
-                       onze volledig CO₂-neutrale en<br>
+                    <p>Wist je dat 85% van alle
+                       Coca-Cola dranken in Nederland
+                       lokaal wordt geproduceerd in
+                       onze volledig CO₂-neutrale en
                        geëlektrificeerde fabriek in Dongen?</p>
-                    <a href="#">Ontdek meer</a>
-                    <img src="images-homepage/carouselhomedesktop.jpg" alt="">
+                    <a aria-label="Knop om naar een pagina te gaan met informatie over de Coca-Cola fabriek in Nederland" href="#">Ontdek meer</a>
+                    <img src="images-homepage/carouselhomedesktop.jpg" alt="Een foto van de fabriek in Dongen waar je lege plastic flessen ondersteboven aan een transportrails ziet hangen. Op de achtergrond loopt een medewerker met een veiligheidsvest door de fabriekshal.">
                 </section>
             </li>
 
-            <li>
+            <li id="kaart3">
                 <section>
                     <h2 class="visually-hidden">De Athletes Code</h2>
-                    <img src="images-homepage/athletes_section3_mobile.webp" alt="">
+                    <img src="images-homepage/athletes_section3_mobile.webp" alt="Collage van vijftien zwart-wit portretten van topsporters die hun handtekening in het blauw richting de camera schrijven, met de tekst “The Code Powerade ">
                 </section>
             </li>
         </ul>
@@ -103,10 +97,10 @@
                 <article>
                     <h3>Duurzaamheid</h3>
                     <p>Wij streven ernaar om een duurzamere en betere toekomst te creëren voor iedereen. Om een verschil te maken in de levens van mensen, in gemeenschappen en voor onze planeet door op de juiste manier zaken te doen. Door beter te doen als bedrijf, kunnen we bijdragen aan een sterkere, duurzamere toekomst voor ons allemaal.</p>
-                    <a href="#">Lees meer</a>
+                    <a aria-label="Knop om naar een pagina te gaan met meer informatie over hoe The Coca-Cola Company zich inzet voor de aarde en hoe ze omgaan met duurzaamheid" href="#">Lees meer</a>
                 </article>
             </div>    
-            <img src="images-homepage/duurzaamheid_2.webp" alt="Duurzaamheidspictogram geplaatst te midden van een weelderige groene achtergrond van planten">   
+            <img src="images-homepage/duurzaamheid_2.webp" alt="Houten recycle-symbool geplaatst op een achtergrond van groene bladeren. Het beeld verwijst naar duurzaamheid en hergebruik.">   
         </section>
 
         <section>
@@ -118,21 +112,24 @@
                 <li><a href="#"><img src="images-homepage/aquarius_background_square_logo(1).png" alt="Aquarius logo"></a></li>
                 <li><a href="#"><img src="images-homepage/nl_chaudfontaine_logo_180x180(1).png" alt="Chaudfontaine logo"></a></li>
             </ul>
-            <a href="#">Alle bekijken</a>
+            <a aria-label="Knop om naar een pagina te gaan met meer informatie over alle merken van The Coca-Cola Company" href="#">Alle bekijken</a>
         </section>
         
         <section>
-            <h2>Blijf op de hoogte</h2>
-            <p>Meld je nu aan voor exclusieve toegang!</p>
-            <button>Houd mij op de hoogte</button>
+            <div>
+                <h2>Blijf op de hoogte</h2>
+                <p>Meld je nu aan voor exclusieve toegang!</p>
+            </div>
+            <button aria-label="Knop om je in te schrijven voor emails en exclusieve toegang">Houd mij op de hoogte</button>
         </section>
     </main>
 
     <footer>
-        <img src="images-homepage/nederland-coca-cola-logo_white_600x96(1).png" alt="Coca-Cola logo wit">
-
-        <a href="#"><img src="images-athletes/location_on_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-            Nederland</a>
+        <section>
+            <h2 class="visually-hidden">Logo en locatieknop</h2>
+            <img src="images-homepage/nederland-coca-cola-logo_white_600x96(1).png" alt="Coca-Cola Nederland logo wit">
+            <a aria-label="Knop voor het wijzigen van de locatie om de juiste informatie per land te krijgen" href="#"><img src="images-athletes/location_on_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="Icoon voor locatie">Nederland</a>
+        </section>
 
         <section>
             <h2 class="visually-hidden"> Footer sectie 'Over ons'</h2>
@@ -169,15 +166,15 @@
 
         <section>
             <h2 class="visually-hidden">Social Media links</h2>
-            <a href="#"><img src="images-athletes/instagram-white-icon.webp" alt=""></a>
-            <a href="#"><img src="images-athletes/youtube-app-white-icon.webp" alt=""></a>
-            <a href="#"><img src="images-athletes/facebook-white.png" alt=""></a>
+            <a href="#"><img src="images-athletes/instagram-white-icon.webp" alt="Instagram icoon, klik hierop om naar het Instagram account van Coca-Cola te gaan."></a>
+            <a href="#"><img src="images-athletes/youtube-app-white-icon.webp" alt="YouTube icoon, klik hierop om naar het YouTube account van Coca-Cola te gaan."></a>
+            <a href="#"><img src="images-athletes/facebook-white.png" alt="Facebook icoon, klik hierop om naar het Facebook account van Coca-Cola te gaan."></a>
         </section>
 
         <section>
             <h2 class="visually-hidden">App Store en Google Play links</h2>
-            <img src="images-homepage/badge_apple(1).png" alt="App Store">
-            <img src="images-homepage/badge_google(1).png" alt="Google Play">
+            <img src="images-homepage/badge_apple(1).png" alt="App Store, klik hierop om de Coca-Cola app in de App Store te bekijken en te downloaden">
+            <img src="images-homepage/badge_google(1).png" alt="Google Play, klik hierop om de Coca-Cola app in Google Play te bekijken en te downloaden">
         </section>
 
         <p>©2026 The Coca-Cola Company, alle rechten voorbehouden</p>

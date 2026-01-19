@@ -42,3 +42,20 @@ detailsElements.forEach(detail => {
         }
     });
 });
+
+
+function handleFooterDetails() {
+    const isDesktop = window.matchMedia('(min-width: 600px)').matches;
+    const details = document.querySelectorAll('footer details');
+
+    details.forEach(detail => {
+      if (isDesktop) {
+        detail.setAttribute('open', '');
+      } else {
+        detail.removeAttribute('open');
+      }
+    });
+  }
+
+  window.addEventListener('resize', handleFooterDetails);
+  window.addEventListener('load', handleFooterDetails);

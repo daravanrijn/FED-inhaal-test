@@ -1,239 +1,139 @@
 :root {
-    --achtergrondKleur:red;
-
-    --tekstKleurZwart:black; 
-    --tekstKleurWit:white;
-
-    --knopKleurHeader:black;
-    --tekstKleurKnopHeader:white;  
-    --hoverKleurKnopHeader:#353535;
-    --activeKleurKnopHeader:#4f4f4f;
-
-    --hoverKleurKnopKaart:#eeeeee;
-    --activeKleurKnopKaart:#d5d5d5;    
-    
-    --navbolletjeKleur:rgba(0,0,0,.4);
-    --activeKleurNavbolletje:black; 
-
-    --knopKleurWit:white;
-    --achtergrondKleurKaart:white;
-    --schaduwKleurKaartDuurzaamheid:#0000000f;
-
-    --borderKleurWit:white; 
-    --borderKleurZwart:black;
-   
-    --hoverKleurKnopDuurzaamheid:#d5d5d5;
-    --activeKleurKnopDuurzaamheid:#a5a5a5;
-
-    --schaduwKleurKaartMerken:rgba(0, 0, 0, 0.08);
-    --hoverKleurKnopMerken:rgb(209, 209, 209);
-    --activeKleurKnopMerken:rgb(181, 180, 180);
-}
-
-main > section {
-    padding-left: 1.6em;
-    padding-right: 1.6em;
+    --background-color:#eeeeee;
+    --hover-lighter:#ededed;
+    --active-lighter:#d5d5d5;
+    --nav-dots:#00000066;
+    --hover-darker:#cdcdcd;
+    --active-darker:#a1a0a0; 
+    --shadow-less:#0000000f;
+    --shadow-more:#00000014;
 }
 
 /* ============================================
-   Carousel Basis 
+   Carousel Basis (clean)
    ============================================ */
 
 main > ul {
-    list-style: none;
-    padding-left: 1.6em;
-    padding-right: 1.6em;
-    margin: 0;
-    display: flex;
-    gap: 0.9em; 
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  gap: 0.3em;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
 main > ul::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 main > ul > li {
-    flex: 0 0 100%;
-    scroll-snap-align: center;
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  padding: 0 0.3em;
+}
+
+/* Kaart (alle 3) */
+main > ul > li > section {
+  position: relative;
+  margin: 2.5em 0;
+  border-radius: 1em;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 3 / 4.9;
+
+  /* tekst netjes onder elkaar (kaart 1 & 2 hebben tekst) */
+  display: grid;
+  align-content: start;
+  padding: 24px;
+}
+
+/* Afbeelding vult altijd de kaart */
+main > ul > li > section > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Tekst/knop bovenop de afbeelding */
+main > ul > li > section > h2,
+main > ul > li > section > p,
+main > ul > li > section > a {
+  z-index: 2;
+  text-align: center;
+  margin: 0;
+  color: var(--color-white);
+}
+
+/* Titels iets strakker */
+main > ul > li > section > h2 {
+  font-weight: 600;
+  line-height: 1.3em;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.3em;
+}
+
+main > ul > li > section > p {
+    line-height: 1.5em;
+    margin-bottom: 1.8em;
+    padding: 0 0.2em;
+    font-size: 1.05em;
+}
+
+/* Knop styling */
+main > ul > li > section > a {
+  justify-self: center;
+  display: inline-block;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  padding: 0.6em 1.2em;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  width: 100%;
+}
+
+main > ul > li > section > a:hover {
+  background-color: var(--hover-lighter);
+}
+
+main > ul > li > section > a:active {
+  background-color: var(--active-lighter);
 }
 
 /* ============================================
-   SECTION 1 Kaart Digitale Wereld
+   Verschillen per kaart
    ============================================ */
 
-main > ul > li:nth-of-type(1) section {
-    position: relative;
-    height: 34.7em;
-    margin: 2.5em 0;
-    border-radius: 1em;
-    overflow: hidden;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-main > ul > li:nth-of-type(1) section img {
-    height: 100%;
-    object-fit: cover;
-}
-
+/* Kaart 1 overlay */
 main > ul > li:nth-of-type(1) section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.1)
-        );
-    z-index: 0;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,.6), rgba(0,0,0,.1));
+  z-index: 1;
 }
 
-main > ul > li:nth-of-type(1) section h2,
-main > ul > li:nth-of-type(1) section p,
-main > ul > li:nth-of-type(1) section a {
-    position: absolute;
-    left: 20px;
-    right: 20px;
-    color: var(--tekstKleurWit);
-    text-align: center;
-    z-index: 1;
-}
-
-main > ul > li:nth-of-type(1) section p {
-    top: 14.5%;
-    font-size: 1.07em;
-    line-height: 1.4;
-    max-width: 48ch;
-    text-align: center;
-}
-
-main > ul > li:nth-of-type(1) section a {
-    top: 36%;
-    display: inline-block;
-    background-color: var(--knopKleurWit);
-    color: var(--tekstKleurZwart);
-    padding: 0.6em;
-    border-radius: 40px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.05rem;
-    width: auto;  
-}
-
-main > ul > li:nth-of-type(1) section a:hover {
-    background-color: var(--hoverKleurKnopKaart);
-}
-
-main > ul > li:nth-of-type(1) section a:active {
-    background-color: var(--activeKleurKnopKaart);
-}
-
-main > ul > li:nth-of-type(1) section h2, 
-main > ul > li:nth-of-type(2) section h2 {
-    top: 5%;
-    font-weight: 600;
-    margin: 0;
-    text-align: center;
-    line-height: 1.3em;
-    letter-spacing: -0.02em;
-}
-
-/* ============================================
-   SECTION 2 Kaart Duurzaam Brabant
-   ============================================ */
-
-main > ul > li:nth-of-type(2) section {
-    position: relative;
-    height: 34.7em;
-    margin: 2.5em 0;
-    border-radius: 1em;
-    overflow: hidden;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-main > ul > li:nth-of-type(2) section img {
-    height: 34.7em;
-    width: 100%;
-    object-fit: cover;
-    object-position: 34%;
-    transform: scale(1.08);
-    z-index: 0;
-}
-
+/* Kaart 2 overlay + focuspunt/zoom */
 main > ul > li:nth-of-type(2) section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.0)
-    );
-    z-index: 1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,.6), rgba(0,0,0,0));
+  z-index: 1;
 }
 
-main > ul > li:nth-of-type(2) section h2,
-main > ul > li:nth-of-type(2) section p,
-main > ul > li:nth-of-type(2) section a {
-    position: absolute;
-    left: 20px;
-    right: 20px;
-    color: var(--tekstKleurWit);
-    text-align: center;
-    z-index: 2;
+main > ul > li:nth-of-type(2) section > img {
+  object-position: 34%;
+  transform: scale(1.08);
 }
 
-main > ul > li:nth-of-type(2) section p {
-    top: 14.5%;
-    font-size: 1.06em;
-    line-height: 1.4;
-    text-align: center;
-    letter-spacing: 0.01em;
-}
-
-main > ul > li:nth-of-type(2) section a {
-    top: 49%;
-    display: inline-block;
-    background-color: var(--knopKleurWit);
-    color: var(--tekstKleurZwart);
-    padding: 0.55em;
-    border-radius: 40px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.05rem;
-    width: auto;  
-}
-
-main > ul > li:nth-of-type(2) section a:hover {
-    background-color: var(--hoverKleurKnopKaart); 
-}
-
-main > ul > li:nth-of-type(2) section a:active {
-    background-color: var(--hoverKleurKnopKaart);
-}
-
-/* ============================================
-   SECTION 3 Kaart De Atheletes Code
-   ============================================ */
-
-main > ul > li:nth-of-type(3) section {
-    position: relative;
-    height: 34.7em;
-    margin: 2.5em 0;
-    border-radius: 1em;
-    overflow: hidden;
-    padding-left: 0;
-    padding-right: 0;
-}
-    
-main > ul > li:nth-of-type(3) section img {
-    height: 100%;
-    object-fit: cover;
+main > ul > li:nth-of-type(3) {
+    margin-right: 2em;
 }
 
 /* ============================================
@@ -250,11 +150,25 @@ main > nav {
 main > nav a {
     text-decoration: none;
     font-size: 1.2em;
-    color: var(--navbolletjeKleur);
+    color: var(--nav-dots);
 }
 
 main > nav a:active {
-    color: var(--activeKleurNavbolletje);
+    color: var(--color-black);
+}
+
+main > nav a[href="#kaart1"] {
+    color: var(--color-black);
+}
+
+main:has(#kaart1:target) nav a[href="#kaart1"],
+main:has(#kaart2:target) nav a[href="#kaart2"],
+main:has(#kaart3:target) nav a[href="#kaart3"] {
+    color: var(--color-black);
+}
+
+main:has(:target) nav a:not([href*=":target"]) {
+    color: var(--nav-dots);
 }
 
 /* ============================================
@@ -263,6 +177,7 @@ main > nav a:active {
 
 main > section:nth-of-type(1) {
     padding: 0;
+    margin-bottom: 2.7em;
 }
    
 main > section:nth-of-type(1) h2 {
@@ -282,10 +197,10 @@ main > section:nth-of-type(1) > div {
 
 /* Witte kaart */
 main > section:nth-of-type(1) article {
-    background-color: var(--achtergrondKleurKaart);
+    background-color: var(--color-white);
     border-radius: 1em;
     padding: 0.1em 1.6em 1.5em;
-    box-shadow: 0 14px 16px var(--schaduwKleurKaartDuurzaamheid);
+    box-shadow: 0 14px 16px var(--shadow-less);
     position: relative;
     z-index: 2;
 }
@@ -303,27 +218,26 @@ main > section:nth-of-type(1) article p {
     margin-top: 0.4em;
     margin-bottom: 1.8em;
     font-weight: 420;
-    max-width: 25.75ch;
 }
 
 main > section:nth-of-type(1) article a {
     display: block;
     text-align: center;
     padding: 0.4em 1.2em;
-    border: 2px solid var(--borderKleurZwart);
+    border: 2px solid var(--color-black);
     border-radius: 999px;
     text-decoration: none;
-    color: var(--tekstKleurZwart);
+    color: var(--color-black);
     font-size: 1.05em;
     font-weight: 600;
 }
 
 main > section:nth-of-type(1) article a:hover {
-    background-color: var(--hoverKleurKnopDuurzaamheid)
+    background-color: var(--hover-darker)
 }
 
 main > section:nth-of-type(1) article a:active {
-    background-color: var(--activeKleurKnopDuurzaamheid)
+    background-color: var(--active-darker)
 }
 
 /* Afbeelding onder de kaart */
@@ -335,39 +249,43 @@ main > section:nth-of-type(1) img {
    SECTION 5 Verken onze merken
    ============================================ */
 
+main > section:nth-of-type(2) {
+    padding: 0 1.6em;
+}
+
 main > section:nth-of-type(2) h2 {
     text-align: center;
-    font-size: 1.73em;
+    font-size: 1.75em;
     font-weight: 650;
     letter-spacing: -0.02em;
-    padding-top: 0.7em;
-    color: var(--tekstKleurZwart);
+    color: var(--color-black);
+    margin-bottom: 1.1em;
 }
 
 main > section:nth-of-type(2) ul {
     list-style: none;
     padding: 0;
-    margin: 1em 0 2.5em;
+    margin: 1em 0 2em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
 }
 
 main > section:nth-of-type(2) li {
-    background-color: var(--achtergrondKleurKaart);
+    background-color: var(--color-white);
     border-radius: 1em;
     aspect-ratio: 1 / 1;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 24px;
-    box-shadow: 0 10px 25px var(--schaduwKleurKaartMerken);
+    box-shadow: 0 10px 25px var(--shadow-more);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 main > section:nth-of-type(2) li:hover {
     transform: scale(1.04);
-    box-shadow: 0 15px 35px var(--schaduwKleurKaartMerken);
+    box-shadow: 0 15px 35px var(--shadow-more);
 }
 
 main > section:nth-of-type(2) li a {
@@ -378,30 +296,201 @@ main > section:nth-of-type(2) li a {
     height: 100%;
 }
 
+main > section:nth-of-type(2) li img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 main > section:nth-of-type(2) li:last-child {
     grid-column: 1 / -1;
     justify-self: center;
     padding: 24px;
-    max-width: 48%;
+    width: 48%;
 }
 
 main > section:nth-of-type(2) > a {
     display: block;
     text-align: center;
     padding: .5em 1.2em;
-    margin-bottom: 2em;
-    border: 2px solid var(--borderKleurZwart);
+    margin-bottom: 3.3em;
+    border: 2px solid var(--color-black);
     border-radius: 999px;
-    color: var(--tekstKleurZwart);
+    color: var(--color-black);
     text-decoration: none;
     font-size: 1.05em;
     font-weight: 600;
 }
 
 main > section:nth-of-type(2) > a:hover {
-    background-color: var(--hoverKleurKnopMerken)
+    background-color: var(--hover-darker)
 }
 
 main > section:nth-of-type(2) > a:active {
-    background-color: var(--activeKleurKnopMerken)
+    background-color: var(--active-darker)
 }
+
+
+
+
+@media (min-width: 375px) {
+    main > ul > li > section {
+        max-width: 560px;
+    }
+}
+
+@media (min-width: 600px) {
+    main > ul > li > section {
+        max-height: 900px; 
+        max-width: 1200px;     
+    }
+
+    main > ul > li > section > h2 {
+        font-size: 2em;
+        padding: 0 1em;
+    }
+}
+
+@media (min-width: 1200px) {
+ 
+    main > ul > li > section {
+        height: clamp(520px, 45vw, 600px);
+        max-width: 1385px;         
+        margin-top: 3.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 4em;
+    }
+
+    main > ul > li:nth-of-type(1) section img {
+        content: url(images-homepage/hero_ab-testing_green-ver_desktop.png);
+    }
+
+    main > ul > li:nth-of-type(3) section img {
+        content: url(images-homepage/hero_img_groot.webp);
+    }
+
+    main > ul > li > section > h2 {
+        text-align: left;
+        padding: 0;
+        max-width: 20ch;
+        font-size: 2.4em;
+        font-weight: 650;
+        margin-left: 0.8em;
+    }
+
+    main > ul > li > section > p {
+        text-align: left;
+        font-size: 1em;
+        padding: 0;
+        max-width: 40ch;
+        margin-left: 2em;
+    }
+
+    main > ul > li section a { 
+        width: auto; 
+        padding: 0.6em 6.5em; 
+        margin-left: 1.8em;
+    }
+
+    main > section:nth-of-type(1) {
+        max-width: 1125px;
+        margin: 3.5em auto;
+    }
+
+    main > section:nth-of-type(1) h2 {
+        font-size: 2.1em;
+    }
+
+    /* Layout */
+    main > section:nth-of-type(1) > div {
+        display: flex;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    /* Afbeelding links */
+    main > section:nth-of-type(1) img {
+        content: url(images-homepage/nl_homepage_campaign_card_desktop_1280x1024\(1\).jpg);
+        margin-top: 5em;
+        border-radius: 0.5em;
+        display: block;
+        width: 57%;
+    }
+
+    main > section:nth-of-type(1) article {
+        position: absolute;
+        right: 0.5em;
+        transform: translateY(-20%);
+        padding: 2em 3.8em 4.2em;
+        margin-top: 6.9em;
+    }
+
+    main > section:nth-of-type(1) article h3 {
+        font-size: 2em;
+    }
+
+    main > section:nth-of-type(1) article p {
+        max-width: 36ch;
+        line-height: 1.4;
+        font-size: 1.1em;
+    }
+
+    main > section:nth-of-type(1) article a {
+        margin-top: 8em;
+        width: 80%;
+    }
+
+    main > section:nth-of-type(2) {
+        max-width: 780px;
+        margin: 0 auto;
+    }
+
+    main > section:nth-of-type(2) h2 {
+        font-size: 2em;
+    }
+
+    main > section:nth-of-type(2) ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 1.5em;
+    }
+
+    main > section:nth-of-type(2) ul li {
+        width: calc((100% - 2 * 1.5em) / 3);
+    }
+
+    main > section:nth-of-type(2) ul li:last-child {
+        width: calc((100% - 2 * 1.5em) / 3);
+    }
+
+    main > section:nth-of-type(2) > a {
+        max-width: 330px;       
+        margin: 0 auto 7em;
+        }
+
+
+}
+
+
+@media (min-width: 1440px) {
+    main > ul > li > section {
+        max-width: 1385px;       
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
+/* @media (min-width: 1200px) {
+
+  main > ul > li:nth-of-type(1) section img {
+    content: url("images-homepage/hero_ab-testing_green-ver_desktop.png");
+  }
+
+} */

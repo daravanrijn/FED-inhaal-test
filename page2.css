@@ -1,291 +1,443 @@
 :root {
-    --achtergrondKleur:#c8c8d2;
-    --tekstKleurZwart:black; 
-    --tekstKleurWit:white;
-
-    --knopKleurHeader:#0f8cf0;
-    --tekstKleurKnopHeader:black;
-    --hoverKleurKnopHeader:#9ebef8;
-    --activeKleurKnopHeader:#e7eefd;
-
-    --knopKleurDownload:#0f8cf0;
-    /* Kan ik dezelfde gebruiken als voor header of is dat verwarrend? */
-
-    --borderKleurZwart:black;
-
-    --hoverKleurSocialMediaIconsPowerade:#0d7dd9;
-    --activeKleurSocialMediaIconsPowerade:#0b70c3;
+    --color-blue:#0f8cf0;
+    --background-color:#c8c8d2;
+    --hover-blue-lighter:#9ebef8;
+    --active-blue-lighter:#e7eefd;
+    --hover-blue-darker:#0d7dd9;
+    --active-blue-darker:#0b70c3; 
 }
 
-section:not(:first-of-type) {
+main > section:not(:first-of-type):not(:last-of-type) {
     padding: 0 1.6em;
+}
+
+header > a {
+    background-color: var(--color-blue);
+    color: var(--color-black);
+}
+
+header > a:hover {
+    background-color: var(--hover-blue-lighter);
+}
+
+header > a:active {
+    background-color: var(--active-blue-lighter);
 }
 
 /* ============================================
    SECTION 1 (Hero image +) tekst
    ============================================ */
 
-section:first-of-type img {
-    width: 100%;
-}
-
-section:nth-of-type(1) h2 {
+main > section:nth-of-type(1) h2 {
     margin: 1.45em auto;
-    text-align: center;
+    padding: 0 0.8em;
     font-size: 1.79em;
-    letter-spacing: -0.02em; 
     font-weight: 650;
     line-height: 1.25em;
-    color: var(--tekstKleurZwart);
-    padding: 0 0.8em;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--color-black);
 }
 
 /* ============================================
    SECTION 2 Tekst (+ Video)
    ============================================ */
 
-section:nth-of-type(2) h2 {
-    text-align: center;
+main > section:nth-of-type(2) h2 {
+    margin: 1.35em auto 1em;
     font-size: 1.5em;
     font-weight: 650;
     line-height: 1.33em;
-    margin: 1.35em auto 1em;
     letter-spacing: -0.02em;
-    color: var(--tekstKleurZwart);
+    text-align: center;
+    color: var(--color-black);
 }
 
 /* ============================================
    SECTION 3 Tekst
    ============================================ */
 
-section:nth-of-type(3) h2 {
-    font-weight: 650;
-    letter-spacing: -0.03em;
-    line-height: 32px;
+main > section:nth-of-type(3) h2 {
     padding-top: 0.8em;
     padding-bottom: 2.5em;
-    color: var(--tekstKleurZwart);
+    font-weight: 650;
+    line-height: 32px;
+    letter-spacing: -0.03em;
+    color: var(--color-black);
 }
 
-section:nth-of-type(3) p {
+main > section:nth-of-type(3) p {
     font-size: 1.05em;
     font-weight: 425;
     line-height: 24px;
-    color: var(--tekstKleurZwart);
+    color: var(--color-black);
 }
 
-section:nth-of-type(3) p strong {
+main > section:nth-of-type(3) p strong {
     font-weight: 625;
 }
 
-section:nth-of-type(3) h3 {
-    font-size: 1.02em;
-    font-weight: 650;
+main > section:nth-of-type(3) h3 {
     padding-top: 1.6em;
     margin-bottom: 0;
-    color: var(--tekstKleurZwart);
+    font-size: 1.02em;
+    font-weight: 650;
+    color: var(--color-black);
 }
 
-section:nth-of-type(3) h3 + p {
+main > section:nth-of-type(3) h3 + p {
     margin-top: 0.6em;
 }
 
-section:nth-of-type(3) p + p {
+main > section:nth-of-type(3) p + p {
     margin-top: 2.4em;
 }
 
-section:nth-of-type(3) a {
+main > section:nth-of-type(3) a {
     display: block;
     margin: 1.8em auto 3.3em;
     padding: 0.58em 1.2em;
-    background-color: var(--knopKleurDownload);
-    color: var(--tekstKleurZwart);
-    text-align: center;
-    text-decoration: none;
-    font-weight: 650;
+    background-color: var(--color-blue);
     font-size: 1.05em;
+    font-weight: 650;
+    text-align: center;
+    color: var(--color-black);
+    text-decoration: none;
 }
 
-section:nth-of-type(3) a:hover {
-    background-color: var(--hoverKleurKnopHeader);
+main > section:nth-of-type(3) a:hover {
+    background-color: var(--hover-blue-lighter);
 }
 
-section:nth-of-type(3) a:active {
-    background-color: var(--activeKleurKnopHeader);
+main > section:nth-of-type(3) a:active {
+    background-color: var(--active-blue-lighter);
 }
 
 /* ============================================
    SECTION 4 Vier atleten
    ============================================ */
 
-section:nth-of-type(4) article {
+main > section:nth-of-type(4) article {
     margin-bottom: 4.5em;
 }
 
-section:nth-of-type(4) article img {
+main > section:nth-of-type(4) article img {
     width: 100%;
     margin-bottom: 2em;
 }
 
-section:nth-of-type(4) article p {
+main > section:nth-of-type(4) article p {
+    margin: 0 auto 0.4em;
     font-size: 1.51em;
     font-weight: 660;
     line-height: 1.33em;
     letter-spacing: -0.03em;
-    color: var(--tekstKleurZwart);
     text-align: center;
-    margin: 0 auto 0.4em;
+    color: var(--color-black);
 }
 
-section:nth-of-type(4) article small {
+main > section:nth-of-type(4) article small {
     display: block;
-    text-align: center;
     font-size: 1.05em;
     font-weight: 430;
-    color: var(--tekstKleurZwart);
+    text-align: center;
+    color: var(--color-black);
 }
 
 /* ============================================
    SECTION 5 Alle atleten
    ============================================ */
 
-section:nth-of-type(5) h2 {
-    text-align: center;
-    font-size: 1.7em;
+main > section:nth-of-type(5) h2 {
     margin-top: -0.5em;
     margin-bottom: 0;
-    color: var(--tekstKleurZwart);
+    font-size: 1.7em;
+    text-align: center;
+    color: var(--color-black);
 }
 
-section:nth-of-type(5) p {
-    text-align: center;
+main > section:nth-of-type(5) p {
     font-size: 1.05em;
     font-weight: 430;
     line-height: 1.4em;
-    color: var(--tekstKleurZwart);
+    text-align: center;
+    color: var(--color-black);
 }
 
-section:nth-of-type(5) ul {
-    list-style: none;
-    padding: 0;
-    margin: 2em 0;
+main > section:nth-of-type(5) ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
+    margin: 2em 0;
+    padding: 0;
+    list-style: none;
 }
 
-section:nth-of-type(5) li {
+main > section:nth-of-type(5) li {
     text-align: center;
 }
 
-section:nth-of-type(5) li img {
+main > section:nth-of-type(5) li img {
     width: 100%;
     margin-bottom: 0.4em;
 }
 
-section:nth-of-type(5) h3 {
+main > section:nth-of-type(5) h3 {
+    margin: 0.7em 0 0.1em;
     font-size: 1.04em;
     font-weight: 620;
-    margin: 0.7em 0 0.1em;
-    color: var(--tekstKleurZwart);
+    color: var(--color-black);
 }
 
-section:nth-of-type(5) li p {
-    font-size: 1.05em;
+main > section:nth-of-type(5) li p {
     margin: 0;
+    font-size: 1.05em;
     line-height: 1.4;
-    color: var(--tekstKleurZwart);
+    color: var(--color-black);
 }
 
-section:nth-of-type(5) ul li:last-child {
+main > section:nth-of-type(5) ul li:last-child {
     grid-column: 1 / -1;
     justify-self: center;
-    max-width: 10em;
+    width: 49%;
 }
+
 
 /* ============================================
-   SECTION 6 Tekt + Powerade
+   SECTION 6 & 7 Tekt + Powerade
    ============================================ */
 
-section:nth-of-type(6) > p:first-of-type {
-    text-align: center; 
-    font-size: 1.5em; 
-    font-weight: 650; 
-    line-height: 32px; 
-    margin: 1.8em auto; 
-    letter-spacing: -0.02em; 
-    color: var(--tekstKleurZwart);
-} 
-
-section:nth-of-type(6) p:nth-of-type(2) { 
-    text-align: center; 
-    font-size: 1.5em; 
-    font-weight: 650; 
-    line-height: 32px; 
-    margin: -0.1em auto; 
-    letter-spacing: -0.02em; 
-    color: var(--tekstKleurZwart);
-}
-
-section:nth-of-type(6) div {
-    background-color: var(--knopKleurHeader);
-    padding: 1.2em 1.6em 1.8em;
-    margin: 3.5em 0;
+main > section:nth-of-type(6) > p:first-of-type, 
+main > section:nth-of-type(6) p:nth-of-type(2) {
+    margin: 1.8em auto;
+    font-size: 1.5em;
+    font-weight: 650;
+    line-height: 32px;
+    letter-spacing: -0.02em;
     text-align: center;
+    color: var(--color-black);
 }
 
-section:nth-of-type(6) div p{
+main > section:nth-of-type(7) {
+    margin: 3.5em 1.6em;
+    text-align: center;
+    background-color: var(--color-blue);
+}
+
+main > section:nth-of-type(7) h2 {
+    padding-top: 0.9em;
+    margin-bottom: 0;
     font-size: 1.75em;
     font-weight: 650;
     letter-spacing: -0.02em;
-    margin-top: 0.27em;
-    color: var(--tekstKleurZwart);
+    color: var(--color-black);
 }
 
-section:nth-of-type(6) div a {
+main > section:nth-of-type(7)  a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 2.5em;
     height: 2.5em;
-    margin: -0.3em 0.25em;
-    border: 2px solid var(--borderKleurZwart);
+    margin: 1.5em 0.25em;
+    border: 2px solid var(--color-black);
 }
 
-section:nth-of-type(6) div a:hover {
-    background-color: var(--hoverKleurSocialMediaIconsPowerade)
+main > section:nth-of-type(7)  a:hover {
+    background-color: var(--hover-blue-darker)
 }
 
-section:nth-of-type(6) div a:active {
-    background-color: var(--activeKleurSocialMediaIconsPowerade)
+main > section:nth-of-type(7)  a:active {
+    background-color: var(--active-blue-darker)
 }
 
-section:nth-of-type(6) div a img {
+main > section:nth-of-type(7)  a img {
     width: 0.85em;
     height: auto;
 }
 
 @media (min-width: 600px) {
 
-    section:first-of-type img {
+    main > section:first-of-type img {
         max-width: 600px;
         margin: 0 auto;
     }
     
-
-    section:nth-of-type(2) video {
+    main > section:nth-of-type(2) video {
         width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+
+    main > section:first-of-type img {
+        width: 100%;
+        max-width: 1440px;
+        content: url(images-athletes/powerade_the-athletes-code_hero-desktop.jpg)
+    }
+
+    main > section:nth-of-type(1) h2 {
+        max-width: 750px;
+        font-size: 2em;
+        margin: 1.7em auto 0;
+    }
+
+    main > section:nth-of-type(2) {
+        display: flex;
+        align-items: center;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+        gap: 5em;
+    }
+
+    main > section:nth-of-type(2) h2 {
+        font-size: 1.8em;
+        line-height: 1.25em;
+        text-align: start;
+        max-width: 24ch;
+    }
+    
+    main > section:nth-of-type(2) video {
+        max-width: 47%;
+    }
+
+    main > section:nth-of-type(3) {
+        max-width: 780px;       
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 8em;
+    }
+
+    main > section:nth-of-type(3) h2 {
+        font-size: 1.8em;
+        line-height: 1.25em;
+        margin-top: 1.1em;
+    }
+
+    main > section:nth-of-type(3) a {
+        max-width: 330px;       
         margin-left: auto;
         margin-right: auto;
     }
 
-}
-
-@media (min-width: 1200px) {
-
-    section:first-of-type img {
-        max-width: 1440px;
-        content: url("images-athletes/powerade_the-athletes-code_hero-desktop.jpg");
+    main > section:nth-of-type(4) {
+        max-width: 1200px;
+        margin: 2em auto 0;
     }
-    
+
+    main > section:nth-of-type(4) article {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        column-gap: 7em;
+        align-items: center;
+        padding: 0 1em;
+    }
+
+    main > section:nth-of-type(4) article:nth-of-type(even) {
+        grid-template-columns: 1fr 1.2fr;
+    }
+
+    main > section:nth-of-type(4) article img {
+        grid-column: 1;
+        grid-row: 1 / 3;
+        width: 100%;
+    }
+
+    main > section:nth-of-type(4) article:nth-of-type(even) img {
+        grid-column: 2;
+    }
+
+    main > section:nth-of-type(4) article p {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: left;
+        margin: 0 0 0.6em 0;
+        align-self: end;
+        font-size: 1.8em;
+        max-width: 23ch;
+    }
+
+    main > section:nth-of-type(4) article small {
+        grid-column: 2;
+        grid-row: 2;
+        text-align: left;
+        align-self: start;
+        padding-left: 2em;
+    }
+
+    main > section:nth-of-type(4) article:nth-of-type(even) p,
+    main > section:nth-of-type(4) article:nth-of-type(even) small {
+        grid-column: 1;
+    }
+
+    main > section:nth-of-type(4) article p br {
+        display: none;
+    }
+
+    main > section:nth-of-type(5) {
+        max-width: 780px;       
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main > section:nth-of-type(5) h2 {
+        font-size: 2em;
+    }
+
+    main > section:nth-of-type(5) ul {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5em;
+     }
+
+    main > section:nth-of-type(5) ul li:last-child {
+        grid-column: auto;
+        justify-self: stretch;
+        width: auto;
+    }
+
+    main > section:nth-of-type(6) {
+        max-width: 780px;       
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 8em;
+    }
+
+    main > section:nth-of-type(6) > p:first-of-type, 
+    main > section:nth-of-type(6) p:nth-of-type(2) {
+        font-size: 1.8em;
+
+    }
+
+    main > section:nth-of-type(7) {
+        max-width: 1125px;       
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        margin-bottom: 8em;
+
+    }
+
+    main > section:nth-of-type(7) h2 {
+        margin-top: 0;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 2em;
+    }
+
+
+    main > section:nth-of-type(7) a:first-of-type {
+    margin-left: auto;
 }
+}
+
+    
+
+
+
+
