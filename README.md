@@ -42,7 +42,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Home Page 
   <img src="readme-images/homepage.png" width="375px" alt="Home Page">
 
-  #### Screenshot(s) van de tweede pagina (small screen):
+  #### Screenshot(s) van de Athletes pagina (small screen):
   The Athletes Code page
   <img src="readme-images/athletescode.png" width="375px" alt="Coca-cola Page">
  
@@ -73,7 +73,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Ik moest even uitvogelen hoe het werkte, maar toen lukte het wel om door de carousel te navigeren. Hij las de kopjes en tekst voor en zelfs de afbeelding werd gedetailleerd omschreven. Het lukte me in eerste instantie niet om op de knoppen te drukken. Terwijl als je normaal gewoon klikt je naar een andere pagina wordt geleid. 
   Ik kreeg te horen dat ik me op een knop bevond en als ik hierop wilde klikken moest ik control + option + spatie inklikken, maar wanneer ik dat deed gebeurde er niks.
 
-  - De banner werd pas opgelezen als ik van pagina veranderde. Toen ik naar de pagina over De Athletes Code ging omschreef hij de afbeelding wel weer uitgebreid en toen ie naar de tweede kop ging om het voor te lezen en ik swipete leek het vast te lopen en kreeg ik 'm niet meer aan de praat.
+  - De banner werd pas opgelezen als ik van pagina veranderde. Toen ik naar de pagina over De Athletes Code ging omschreef hij de afbeelding wel weer uitgebreid en toen ie naar de Athletes kop ging om het voor te lezen en ik swipete leek het vast te lopen en kreeg ik 'm niet meer aan de praat.
 Het viel me op dat niet elke afbeelding omschreven werd.
 Toen ik even iets beter begreep hoe het werkte ging het navigeren wel beter, maar het is niet makkelijk. Hij las wel alles voor, maar het voelde chaotisch en de stem is niet fijn.
 
@@ -139,9 +139,9 @@ Toen ik even iets beter begreep hoe het werkte ging het navigeren wel beter, maa
   Screenshots van mijn HTML tot nu toe:
 
   <img src="readme-images/eerste-versie-ss1.png" width="375px" alt="Eerste deel pagina (van boven naar beneden)">
-  <img src="readme-images/eerste-versie-ss2.png" width="375px" alt="Tweedee deel pagina (van boven naar beneden)">
+  <img src="readme-images/eerste-versie-ss2.png" width="375px" alt="Athletese deel pagina (van boven naar beneden)">
   <img src="readme-images/html-versie1-ss1.png" width="375px" alt="Eerste deel HTML (van boven naar beneden)">
-  <img src="readme-images/html-versie1-ss2.png" width="375px" alt="Tweede deel HTML (van boven naar beneden)">
+  <img src="readme-images/html-versie1-ss2.png" width="375px" alt="Athletes deel HTML (van boven naar beneden)">
   <img src="readme-images/html-versie1-ss3.png" width="375px" alt="Derde deel HTML (van boven naar beneden)">
   <img src="readme-images/html-versie1-ss4.png" width="375px" alt="Vierde deel HTML (van boven naar beneden)">
   
@@ -180,7 +180,7 @@ Toen ik even iets beter begreep hoe het werkte ging het navigeren wel beter, maa
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Na het eerste voortgangsgesprek heb ik de HTML voor mijn tweede pagina ook afgemaakt. Dit ging goed.
+  Na het eerste voortgangsgesprek heb ik de HTML voor mijn Athletes pagina ook afgemaakt. Dit ging goed.
   Toen was het tijd om aan met de CSS aan de slag te gaan. Ik merkte dat ik wel even vastliep met hoe ik hieraan moest beginnen.
   Ik begon eigenlijk gewoon met de achtergrondkleur en het meest geschikte font vinden en deze toepassen. Omdat ik eigenlijk daarna nog steeds een beetje was van hoe ga ik dit aanpakken besloot ik maar gewoon met de header te starten. 
   Omdat het voelde alsof ik alles echt even kwijt was heb ik wel aan ChatGpT de code gevraagd. Het duurde wel even voordat ik de juiste code had ontvangen en moest telkens vragen om aanpassingen. Toen ik eindelijk tevreden was met hoe het er uitzag was het natuurlijk niet mijn plan om dit klakkeloos over te nemen. Ik wil zelf begrijpen wat wat doet en ging zo een beetje spelen met alle properties. Ik was ook nog niet volledig tevreden over alle groottes dus deze heb ik zelf aangepast tot ik het er beter uit vond zien. Ook heb ik best een aantal properties weggehaald en wat aanpassingen gemaakt in de selectors. Hierna voelde het gelukkig al iets meer alsof de kennis een beetje terug kwam.
@@ -299,9 +299,9 @@ Toen ik even iets beter begreep hoe het werkte ging het navigeren wel beter, maa
   - Wel kon ik natuurlijk met de voice-over door mijn site. Dit verliep wel goed. 
     Wanneer ik mijn site open begint de voice over gewoon direct. De coca-cola header wordt goed en duidelijk omschreven en aan het begin is er een 'Skip to content' knop/optie. Dat heb ik niet... 
 
-    Wat bij mij wel beter gaat is dat de voice-over de hele carousel afgaat. Na de eerste kaart gaat hij automatisch naar de tweede en hij gaat ze alle drie af voordat hij naar het volgende deel over de duurzaamheid gaat. Bij coca-cola gaat de voice-over na de eerste kaart door naar duurzaamheid en skipt eigenlijk de rest van de carousel.
+    Wat bij mij wel beter gaat is dat de voice-over de hele carousel afgaat. Na de eerste kaart gaat hij automatisch naar de Athletes en hij gaat ze alle drie af voordat hij naar het volgende deel over de duurzaamheid gaat. Bij coca-cola gaat de voice-over na de eerste kaart door naar duurzaamheid en skipt eigenlijk de rest van de carousel.
 
-    Ook heb ik aandacht besteed aan het herschrijven van de alt-teksten voor de kaarten in de carousel. Naar mijn mening zijn deze nu duidelijker. Coca-cola had niet eens echt een beschrijving voor de tweede kaart in de carousel..
+    Ook heb ik aandacht besteed aan het herschrijven van de alt-teksten voor de kaarten in de carousel. Naar mijn mening zijn deze nu duidelijker. Coca-cola had niet eens echt een beschrijving voor de Athletes kaart in de carousel..
     Ook de rest van de afbeeldingen op de site heb ik bewust herbeschreven en ik heb bij knoppen/links een aria-label toegevoegd wat omschrijft waar de knop voor dient. Dit had coca-cola zelf ook niet
 
   - Ik ben de WCAG checklist opnieuw afgegaan en doordat ik de aria-labels heb toegevoegd aan de buttons en links heb ik dat verbeterd.
@@ -316,17 +316,32 @@ Toen ik even iets beter begreep hoe het werkte ging het navigeren wel beter, maa
 
 ## Eindgesprek (week 9)
 
-<details>
+<details> 
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitkomst opdracht 1">
+
+  ### Home page mobile
+  <img src="readme-images/page1-mobile.png" width="375px" alt="Home page mobile">
+
+  ### Home page desktop
+  <img src="readme-images/page1.png" width="375px" alt="Home page desktop">
+  
+  ### Athletes page mobile
+  <img src="readme-images/page2-mobile.png" width="375px" alt="Athletes page mobile">
+
+  ### Athletes page desktop
+  <img src="readme-images/page2.png" width="375px" alt="Athletes page desktop">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Als ik terug kijk op de afgelopen weken heb ik wel echt ontzettend veel geleerd.
+  Het was jammer dat ik dit vak begon met zo'n slechte basis. Ik begreep eigenlijk echt bijna niks en dat is gelukkig nu wel heel anders.
+  Mijn kennis voelt veel sterker en ik begrijp hoe dingen in elkaar zitten. Ik vind coderen wel gewoon nog steeds heel lastig, maar ik weet nu dat ik er echt wel kom en het allemaal vanzelf echt wel leer. Eigenlijk is tot nu toe alles gelukt om na te maken, op de carousel na, maar daar zou ik uiteindelijk vast ook achter kunnen komen met meer tijd. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Het responsive maken van de site ging gelukkig best goed. Ik had eerst geen idee hoe dat zou moeten en was bang dat ik het misschien niet zou kunnen. Toch koos ik voor die uitdaging omdat ik wel benieuwd was naar het leren ervan. Achteraf vond ik het best meevallen en ben ik blij dat ik nu gewoon weet hoe je dat aanpakt. 
+
+  Ik heb echt m'n best gedaan en daar ben ik wel trots op. Ook ben ik best tevreden met het resultaat. Ik ben voornamelijk blij met het vertrouwen dat ik heb opgebouwd en ik vind het best cool om deze code kennis nu te hebben.
 
 
   ### Dit was lastig/Is niet gelukt:
@@ -335,7 +350,7 @@ Toen ik even iets beter begreep hoe het werkte ging het navigeren wel beter, maa
   - Het juist en responsive maken van de header en footer voor de desktop versie (vanaf 1200px).
     Dit heb ik gewoon niet meer gered qua tijd. Wel heb ik de header voor de desktop aan het begin van het blok gemaakt, dus deze code heb ik wel, van de footer nog niet.
   - Landscape/liggend voor responsive.
-    Hier ben ik op het laatste moment pas achter gekomen dat dat ook nog moest.
+    Hier ben ik op het laatste moment pas achter gekomen dat dat ook nog moest en heb ik dus helaas niet meer gered.
 
   Iets minder belangrijk, maar wat ik wel nog had gedaan met meer tijd:
 
@@ -348,13 +363,25 @@ Toen ik even iets beter begreep hoe het werkte ging het navigeren wel beter, maa
   - Grid en Flexbox heb ik ook nog wel echt hulp voor nodig, maar snap ik langzaamaan steeds meer.
   - Ik ben veel tijd kwijt geweest aan de carousel. Dat vond ik denk ik het lastigste onderdeel van de twee pagina's.
 
+  ### Mijn header vanaf 1200px, klopt niet. Nav moet tevoorschijn komen
   <img src="readme-images/header-nu.png" width="375px" alt="Mijn header vanaf 1200px, klopt niet. Nav moet tevoorschijn komen">
+
+  ### De header die ik eerder had gemaakt. Klopt wel bijna
   <img src="readme-images/mijn-header-desktop.png" width="375px" alt="De header die ik eerder had gemaakt. Klopt wel bijna">
+
+  ### De juiste header vanaf 1200px, van de coca-cola site
   <img src="readme-images/coca-cola-header.png" width="375px" alt="De juiste header vanaf 1200px, van de coca-cola site">
 
+  ### Mijn footer van 375-600px, kloppend
   <img src="readme-images/footer-mobile.png" width="375px" alt="Mijn footer van 375-600px, kloppend">
+
+  ### Mijn footer van 600-1200px, kloppend
   <img src="readme-images/footer-600-1200px.png" width="375px" alt="Mijn footer van 600-1200px, kloppend">
+
+  ### Mijn footer vanaf 1200px, groeit niet mee zoals het hoort
   <img src="readme-images/footer-1200px<.png" width="375px" alt="Mijn footer vanaf 1200px, groeit niet mee zoals het hoort">
+
+  ### De juiste footer vanaf 1200px, van de coca-cola site
   <img src="readme-images/juiste-footer-coca-cola.png" width="375px" alt="De juiste footer vanaf 1200px, van de coca-cola site">
 
 
@@ -373,11 +400,10 @@ Toen ik even iets beter begreep hoe het werkte ging het navigeren wel beter, maa
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
-  2. https://medium.com/swlh/better-ways-to-organise-css-properties-9a066e7ded62
-  3. ...
-
-https://youtu.be/U8smiWQ8Seg?si=7CXJ_CeEp_YXCf-5 voor hamburgermenu
+  1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/ Voor het beter begrijpen en leren van flexbox
+  2. https://medium.com/swlh/better-ways-to-organise-css-properties-9a066e7ded62 Voor de juiste volgorde van properties binnen de selector
+  3. https://youtu.be/U8smiWQ8Seg?si=7CXJ_CeEp_YXCf-5 Voor tutorial hamburgermenu
+  4. 
 
 
 </details>
