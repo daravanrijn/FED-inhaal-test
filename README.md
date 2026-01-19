@@ -247,7 +247,11 @@ Toen ik even iets beter begreep hoe het werkte ging het navigeren wel beter, maa
   <img src="readme-images/screenshot-2.png" width="375px" alt="Proces hamburgermenu en verstopte navigatie">
   <img src="readme-images/screenshot-3.png" width="375px" alt="Proces hamburgermenu en verstopte navigatie">
 
-  Nog screenshots van na week 7/dit voortgangsgesprek:
+
+
+
+
+  Nog screenshots van na week 7:
 
   <img src="readme-images/proces-footer0.png" width="375px" alt="Proces van footer responsive maken">
   <img src="readme-images/proces-footer.png" width="375px" alt="Proces van footer responsive maken">
