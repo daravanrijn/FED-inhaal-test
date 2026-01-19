@@ -1,3 +1,5 @@
+// Hulp van ChatGPT met hamburgermenu 
+
 const openButton = document.querySelector('header > label, header > button');
 const closeButton = document.querySelector('header nav > button');
 const nav = document.querySelector('header nav');

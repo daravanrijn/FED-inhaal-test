@@ -12,17 +12,20 @@
   --active-footer:#363636;
 }
 
-*, ::before, ::after { box-sizing: border-box; }
+*, ::before, ::after { 
+  box-sizing: border-box; 
+}
 
 img, video {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
 }
 
 body {
   margin: 0;
-  background-color: var(--background-color);
   font-family: "Montserrat", sans-serif;
+  color: var(--color-black);
+  background-color: var(--background-color);
 }
 
 button {
@@ -45,11 +48,10 @@ button {
    ============================================ */
 
 header {
-  background-color: var(--color-white);
   display: flex;
-  align-items: center;            
+  align-items: center;
   padding: 1em 1.5em;
-  margin: 0 auto;
+  background-color: var(--color-white);
 }
 
 header h1 {
@@ -61,104 +63,101 @@ header h1 img {
 }
 
 header > a {
-  background-color: var(--color-black);
-  color: var(--color-white);
-  text-decoration: none;
-  font-size: 0.75em;
-  letter-spacing: 0.02em;
-  font-weight: 600;
+  margin: 0 1.7em 0 auto;
   padding: 1.05em 1.4em;
-  border-radius: 8000px;
-  margin-left: auto; 
-  margin-right: 1.7em;
+  font-size: 0.75em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  border-radius: 999px;
 }
 
 header > a:hover {
-    background-color: var(--hover-header);
+  background-color: var(--hover-header);
 }
 
 header > a:active {
-    background-color: var(--active-header);
+  background-color: var(--active-header);
 }
 
 header > button {
-    background: none;
-    border: none;
-    padding: 0;
+  padding: 0;
+  background: none;
+  border: none;
 }
 
 header > button img {
-    width: 1.8em; 
+  width: 1.8em; 
 }
 
 /* ============================================
-   NAV Hamburgermenu
-   ============================================ */
+  NAV Hamburgermenu
+  ============================================ */
+
+/* Hulp van ChatGPT voor het hamburgermenu en de in/uitklapbare menu items (ook voor bijbehornde JS). Wel zelf alles aangepast voor zover ik het begreep of bijv px naar em*/
 
 header > nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    padding: 28px 24px 27px 24px;
-    background-color: var(--color-white);
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
-    z-index: 1000;
-    display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding: 2em 1.8em;
+  background-color: var(--color-white);
 }
 
-/* Sluitknop */
 header > nav > button {
-    position: absolute;
-    top: 22px;
-    right: 23px;
-    background: none;
-    border: none;
-    font-size: 1.25em;
-    cursor: pointer;
-    color: var(--color-black);
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 2em;
+  cursor: pointer;
+  color: var(--color-black);
+  background: none;
+  border: none;
 }
 
-/* Menu items */
 header nav ul {
-    list-style: none;
-    margin: 3em 0 0;
-    padding: 0;
+  margin: 3em 0 0;
+  padding: 0;
+  list-style: none;
 }
 
 header nav ul > li {
-    color: var(--color-black);
-    margin-bottom: .3em;
-    font-size: 1.6em;
-    font-weight: 620;
-    letter-spacing: -0.02em;
+  margin-bottom: 0.3em;
+  font-size: 1.6em;
+  font-weight: 620;
+  letter-spacing: -0.02em;
+  color: var(--color-black);
 }
 
 header nav ul a {
-    text-decoration: none;
-    color: var(--color-black);
-    font-size: 0.97em;
-    letter-spacing: 0.02em;
+  font-size: 0.97em;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--color-black);
 }
 
 header nav details {
-    width: 100%;
+  width: 100%;
 }
 
 header summary {
-  list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0;
   padding: 0 0.2em 0 0;
-  font-size: 0.97em;         
+  font-size: 0.97em;
   font-weight: 620;
   letter-spacing: 0.02em;
   cursor: pointer;
+  list-style: none;
 }
 
 header summary::-webkit-details-marker {
@@ -167,10 +166,10 @@ header summary::-webkit-details-marker {
 
 header summary::after {
   content: "›";
-  color: var(--color-black);
-  font-size: 1.4em;
+  font-size: 2em;
   font-weight: 300;
   line-height: 1;
+  color: var(--color-black);
   transform-origin: center;
   transition: transform 0.35s ease;
 }
@@ -179,131 +178,128 @@ header details[open] summary::after {
   transform: rotate(90deg);
 }
 
-/* Sub menu */
 header nav details ul {
-    list-style: none;
-    margin: .5em 0 0;
-    padding: 0 0 0.5em 1em;
+  margin: 0.5em 0 0;
+  padding: 0 0 0.5em 1em;
+  list-style: none;
 }
 
 header nav details ul a {
-    color: var(--color-submenu);
+  color: var(--color-submenu);
 }
 
 header nav details ul li {
-    font-size: 0.65em;
-    font-weight: 420;
-    letter-spacing: 0.02em;
-    margin-bottom: 1.3em;
+  margin-bottom: 1.3em;
+  font-size: 0.65em;
+  font-weight: 420;
+  letter-spacing: 0.02em;
 }
 
-/* Onderin */
 header nav > a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: 600;
-    letter-spacing: 0.02em;
+  display: block;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  text-align: center;
 }
 
-/* Lijn */
 header nav > a:first-of-type::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -1.5em;         
-    height: 1px;
-    background-color: var(--color-light-grey)
+  content: "";
+  position: absolute;
+  top: -1.5em;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--color-light-grey);
 }
 
-/* Zwarte knop */
 header nav > a:first-of-type {
-    margin-top: auto;
-    position: relative;
-    padding: .6em 1.2em;
-    border-radius: 999px;
-    background-color: var(--color-black);
-    color: var(--color-white);
-    text-align: center;
-    font-size: 1em;
-    font-weight: 600;
+  position: relative;
+  margin-top: auto;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  border-radius: 999px;
 }
 
-/* Witte knop */
 header nav > a:last-of-type {
-    margin-top: 1em;
-    padding: .5em 1.2em;
-    border-radius: 999px;
-    border: 2px solid var(--color-black);
-    color: var(--color-black);
+  margin-top: 1em;
+  padding: 0.5em 1.2em;
+  border: 2px solid var(--color-black);
+  border-radius: 999px;
+  color: var(--color-black);
 }
 
 /* ============================================
-   LAATSTE SECTION (Blijf op de hoogte)
-   ============================================ */
+  LAATSTE SECTION (Blijf op de hoogte)
+  ============================================ */
+
+/* Ik heb mij te laat pas gerealiseerd dat deze section eigenlijk gewoon bij de footer hoort. Ook gebruik ik een div hier omdat het me anders niet lukte met de styling wanneer het responsive wordt en de tekst en knop naast elkaar komen. Als ik meer tijd had gehad had ik nog verder gekeken naar manieren hiervoor zonder gebruik te maken van een div. Ook zou ik dit deel bij de footer toevoegen. */
 
 main > section:last-of-type {
-    background-color: var(--background-last-section);
-    color: var(--color-white);
-    padding: 1.5em 1.6em 2.5em;
+  padding: 1.5em 1.6em 2.5em;
+  color: var(--color-white);
+  background-color: var(--background-last-section);
 }
 
 main > section:last-of-type h2 {
-    font-size: 1.5em;
-    font-weight: 650;
-    letter-spacing: -0.02em;
-    margin-bottom: 0;
-    color: var(--color-white)
+  margin-bottom: 0;
+  font-size: 1.5em;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
 }
 
 main > section:last-of-type p {
-    font-size: 1.05em;
-    font-weight: 400;
-    line-height: 1.4em;
-    letter-spacing: 0.01em;
-    word-spacing: 0.01em;
-    margin-bottom: 2em;
-    color: var(--color-white)
+  margin-bottom: 2em;
+  font-size: 1.05em;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: var(--color-white);
 }
 
 main > section:last-of-type button {
-    background-color: var(--background-last-section);
-    color: var(--color-white);
-    padding: .5em 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.6em;
-    width: 100%;
-    border: 2px solid var(--color-white);
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1em;
-    letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  width: 100%;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+  background-color: var(--background-last-section);
+  border: 2px solid var(--color-white);
+  border-radius: 999px;
 }
 
 main > section:last-of-type button:hover {
-    background-color: var(--hover-last-section)
+  background-color: var(--hover-last-section)
 }
 
 main > section:last-of-type button:active {
-    background-color: var(--active-last-section)
+  background-color: var(--active-last-section)
 }
 
 /* ============================================
-   FOOTER
-   ============================================ */
+  FOOTER
+  ============================================ */
+
+  /* In eerste instantie veel hulp gebruikt van ChatGPT met de code voor de footer voor de mobile. Ik vond dit nog erg lastig. Later moest ik wat dingen aanpassen omdat het niet goed zou gaan met de responsive versie en dit lukte eigenlijk wel grotendeels zelf. */
 
 footer {
-  background: var(--color-black);
-  color: var(--color-white);
   padding: 3.5em 1.6em 2.5em;
   font-family: "Montserrat", sans-serif;
+  color: var(--color-white);
+  background: var(--color-black);
 }
 
+/* SECTION 1 – Logo en knop */
 footer > section:first-of-type {
   margin: 0 0 1.4em 0;
   padding-top: 0;
@@ -316,30 +312,29 @@ footer > section:first-of-type > img {
   margin: 0 0 2.5em;
 }
 
-/* Land knop */
 footer > section:first-of-type a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.6em;
-    width: 100%;
-    padding: 0.37em 1.2em;
-    margin-bottom: 2.5em;
-    border: 2px solid var(--color-white);
-    border-radius: 999px;
-    color: var(--color-white);
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 1.02em;
-    letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  width: 100%;
+  padding: 0.37em 1.2em;
+  margin-bottom: 2.5em;
+  font-size: 1.02em;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+  border-radius: 999px;
 }
 
 footer > section:first-of-type a:hover {
-    background-color: var(--hover-footer);
+  background-color: var(--hover-footer);
 }
 
 footer > section:first-of-type a:active {
-    background-color: var(--active-footer);
+  background-color: var(--active-footer);
 }
 
 footer > section:nth-of-type(2) + section {
@@ -347,6 +342,7 @@ footer > section:nth-of-type(2) + section {
   padding-top: 0;
 }
 
+/* SECTION 2 & 3 – Menu items */
 footer > details {
   margin: 0;
   padding: 0;
@@ -357,16 +353,16 @@ footer > section details {
 }
 
 footer summary {
-  list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  font-size: 1.5em;         
+  font-size: 1.5em;
   font-weight: 620;
   letter-spacing: -0.02em;
   cursor: pointer;
+  list-style: none;
 }
 
 footer summary::-webkit-details-marker {
@@ -385,9 +381,9 @@ footer details[open] summary::after {
 }
 
 footer details ul {
-  list-style: none;
   margin: 1.4em 0 0;
   padding: 0;
+  list-style: none;
 }
 
 footer details li {
@@ -396,39 +392,40 @@ footer details li {
 }
 
 footer details a {
-  color: var(--color-white);
-  text-decoration: none;
   font-size: 0.9em;
   font-weight: 620;
   letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--color-white);
 }
 
+/* SECTION 4 – Juridische links */
 footer > section:nth-of-type(4) {
-  margin-top: 1.2em;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 1.5em;
   row-gap: 0.8em;
+  margin-top: 1.2em;
   padding: 2.5em 0;
   border-top: 1px solid var(--color-light-grey);
   border-bottom: 1px solid var(--color-light-grey);
 }
 
 footer > section:nth-of-type(4) a {
-  display: block;         
-  text-align: left;        
-  background: none;
+  display: block;
   padding: 0;
   margin: 0;
-  color: var(--color-white);
-  text-decoration: none;
-  font-size: 0.9em;        
+  font-size: 0.9em;
   font-weight: 600;
   letter-spacing: 0.02em;
   line-height: 1.45em;
+  text-align: left;
+  text-decoration: none;
+  color: var(--color-white);
+  background: none;
 }
 
-/* SECTION 4 – Social icons */
+/* SECTION 5 – Social icons */
 footer > section:nth-of-type(5) {
   display: flex;
   gap: 1em;
@@ -459,14 +456,14 @@ footer > section:nth-of-type(5) img {
   height: auto;
 }
 
-/* SECTION 5 – App stores */
+/* SECTION 6 – App stores */
 footer > section:nth-of-type(6) {
   display: flex;
   gap: 0.5em;
-  border-top: none;
   margin-top: 0;
   padding-top: 0;
   padding-bottom: 1.8em;
+  border-top: none;
 }
 
 footer > section:nth-of-type(6) img {
@@ -476,13 +473,15 @@ footer > section:nth-of-type(6) img {
   border-radius: 8px;
 }
 
-/* Copyright */
 footer > p {
   font-size: 0.78em;
   line-height: 1.45em;
   letter-spacing: 0.03em;
 }
 
+/* ============================================
+  RESPONSIVE
+  ============================================ */
 
 @media (min-width: 600px) {
   footer {
@@ -519,13 +518,13 @@ footer > p {
   }
 
   footer summary { 
-    font-size: 0.62em; 
-    font-weight: 550; 
-    cursor: default; 
+    padding-bottom: 0.4em;
+    font-size: 0.62em;
+    font-weight: 550;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
     color: var(--color-light-grey);
-    letter-spacing: 0.02em;
-    padding-bottom: 0.4em;
+    cursor: default;
   }
  
   footer details ul {
@@ -544,21 +543,18 @@ footer > p {
   }
 
   footer > section:nth-of-type(4) {
-    border-top: none;
+    display: block;
     margin-top: 0;
     padding: 0 0 1.5em 0;
-    display: block;
+    border-top: none;
   }
 
   footer > section:nth-of-type(4) a {
     margin-bottom: 0.9em;
   }
-
 }
 
-
 @media (min-width: 1200px) {
-
   main > section:last-of-type {
     display: flex;
     align-items: center;
@@ -578,28 +574,11 @@ footer > p {
 
   main > section:last-of-type button {
     margin-left: auto;
+    margin-bottom: 0.8em;
     width: auto;
     padding: 0.5em 4.7em;
     white-space: nowrap;
-    margin-bottom: 0.8em;
   }
-
 }
-  
-  
 
-
-
-
-
-
-
-
-
-/* @media (min-width: 1200px) {
-
-  header > button {
-    display: none;
-  }
-
-} */
+/* Flex-basis en padding-left/right: calc((...)) heb ik met code van ChatGPT, dit moest ik wel nog leren te begrijpen */
