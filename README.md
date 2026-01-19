@@ -248,18 +248,7 @@ Toen ik even iets beter begreep hoe het werkte ging het navigeren wel beter, maa
   <img src="readme-images/screenshot-3.png" width="375px" alt="Proces hamburgermenu en verstopte navigatie">
 
 
-
-
-
-  Nog screenshots van na week 7:
-
-  <img src="readme-images/proces-footer0.png" width="375px" alt="Proces van footer responsive maken">
-  <img src="readme-images/proces-footer.png" width="375px" alt="Proces van footer responsive maken">
-  <img src="readme-images/proces-merken.png" width="375px" alt="Proces van layout van merken aanpassen voor responsive">
   
-  
-
-
 
 
   ### Agenda voor meeting
@@ -283,6 +272,14 @@ Toen ik even iets beter begreep hoe het werkte ging het navigeren wel beter, maa
   - Overlegd over carousel wat wel en wat niet hoeft
   - Zelfde voor kleine details footer.
   - Custom properties weer aangepast en verbeterd.
+
+
+  Nog screenshots van na week 7, toen ik bezig was met het responsive maken:
+
+  <img src="readme-images/proces-footer.png" width="375px" alt="Proces van footer responsive maken">
+  <img src="readme-images/proces-footer0.png" width="375px" alt="Proces van footer responsive maken">
+  <img src="readme-images/proces-merken.png" width="375px" alt="Proces van layout van merken aanpassen voor responsive">
+  
 
 </details>
 
