@@ -77,6 +77,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Het viel me op dat niet elke afbeelding omschreven werd.
 Toen ik even iets beter begreep hoe het werkte ging het navigeren wel beter, maar het is niet makkelijk. Hij las wel alles voor, maar het voelde chaotisch en de stem is niet fijn.
 
+- WCAG checklist met Ruud ingevuld. Deze papieren bewaar ik.
+
 </details>
 
 
@@ -193,8 +195,6 @@ Toen ik even iets beter begreep hoe het werkte ging het navigeren wel beter, maa
 
   Over het algemeen vind ik het dus wel goed gaan. Ik ga vooruit, soms een beetje traag, maar ik hoop vooral ook dat m'n zelfvertrouwen wat groter wordt en het daardoor steeds makkelijker wordt om aan te werken. Ik vind het moeilijk, maar het daagt me uit (op allerlei vlakken) en dat is goed. 
 
-(neem ook screenshots op van delen van je website en code)
-
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -218,38 +218,27 @@ Toen ik even iets beter begreep hoe het werkte ging het navigeren wel beter, maa
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Maja kon me gelukkig wel geruststellen dat ik best goed op weg was en dat mijn manier van werken goed was.
+  - Wel starten vanaf mobile
+  - Alle sections moeten een heading 
+  - Alle code zelf begrijpen, maar ik kan wel hulp krijgen bij het schrijven ervan. 
 
 </details>
 
 
 
 
-
-## Toegankelijkheidstest 2/2 (week 4)
-
-<details>
-  <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
-
-  ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
-</details>
-
-
-
-
-
-## Voortgang 3 (week 4)
+## Voortgang 3 (week 7)
 
 <details>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  M'n doel was om aan het einde van de kerstvakantie alle CSS af te hebben. Ik heb hier oprecht wel hard m'n best voor gedaan, maar vanwege persoonlijke omstandigheden minder tijd voor gehad dan ik eerst dacht. Ook ben ik niet zo snel en kost het me veel tijd, om dan vervolgens maar een klein stukje af te hebben. Desondanks was ik wel aardig op weg en wat denk ik voor mij het belangrijkste was was dat m'n vertrouwen en kennis wel steeds meer groeide. Ik krijg het nog wel een beetje benauwd bij het idee dat ik het straks ook nog responsive moest gaan maken, omdat ik geen idee heb hoe dat moet. Maar tot nu toe kom ik er uiteindelijk telkens wel uit, dus ik denk dat dat ook wel goed moet komen. Nu eerst nog even de laatste delen van de CSS afmaken.
+
+  Ik vond dat carousel best ingewikkeld, dus ben me eigenlijk eerst gaan focussen op de athletes code pagina en dat ging eigenlijk steeds beter. Ik vraag ontzettend veel aan Chatgpt, maar ik pas tegelijkertijd al steeds meer zelf aan. Ik merk wel echt dat ik veel geleerd heb de afgelopen twee weken en dat doet me goed. 
+
+  Wat me nog wat ingewikkelder lijkt waar ik nog mee aan de slag moet: carousel, hamburgermenu, uitklapbare menu in footer.
 
 
   ### Agenda voor meeting
@@ -263,12 +252,16 @@ Toen ik even iets beter begreep hoe het werkte ging het navigeren wel beter, maa
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  Ik kon helaas niet bij het derde voortgangsgesprek zijn.
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  Ik heb wel nog in week 8 Danny online gesproken op maandag en ben vrijdag naar een extra feedbackmoment geweest.
+  Daar heb ik de volgende dingen nog opgestoken:
+
+  - Custom properties toevoegen
+  - 3e CSS bestand voor overlappende code toevoegen
+  - Overlegd over carousel wat wel en wat niet hoeft
+  - Zelfde voor kleine details footer.
+  - Custom properties weer aangepast en verbeterd.
 
 </details>
 
@@ -276,13 +269,36 @@ Toen ik even iets beter begreep hoe het werkte ging het navigeren wel beter, maa
 
 
 
-## Eindgesprek (week 5)
+## Toegankelijkheidstest 2/2 (week 8)
+
+<details>
+  <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
+
+  ### Bevindingen
+  - De les met de toegankelijkheidstest ging niet door dus ik had zelf verder geen middelen om beperkingen na te bootsen.
+  - Wel kon ik natuurlijk met de voice-over door mijn site. Dit verliep wel goed. 
+    Wanneer ik mijn site open begint de voice over gewoon direct. De coca-cola header wordt goed en duidelijk omschreven en aan het begin is er een 'Skip to content' knop/optie. Dat heb ik niet... 
+
+    Wat bij mij wel beter gaat is dat de voice-over de hele carousel afgaat. Na de eerste kaart gaat hij automatisch naar de tweede en hij gaat ze alle drie af voordat hij naar het volgende deel over de duurzaamheid gaat. Bij coca-cola gaat de voice-over na de eerste kaart door naar duurzaamheid en skipt eigenlijk de rest van de carousel.
+
+    Ook heb ik aandacht besteed aan het herschrijven van de alt-teksten voor de kaarten in de carousel. Naar mijn mening zijn deze nu duidelijker. Coca-cola had niet eens echt een beschrijving voor de tweede kaart in de carousel..
+    Ook de rest van de afbeeldingen op de site heb ik bewust herbeschreven en ik heb bij knoppen/links een aria-label toegevoegd wat omschrijft waar de knop voor dient. Dit had coca-cola zelf ook niet
+
+  - Ik ben de WCAG checklist opnieuw afgegaan en doordat ik de aria-labels heb toegevoegd aan de buttons en links heb ik dat verbeterd.
+    Ik heb alleen dus geen skip link en de video heeft volgens mij dus wel ook autoplay wat beter van niet kan. 
+  - Ik zal de lijst meenemen naar het eindgesprek.
+ 
+</details>
+
+
+
+## Eindgesprek (week 9)
 
 <details>
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitkomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
