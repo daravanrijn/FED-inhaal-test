@@ -241,11 +241,12 @@ Toen ik even iets beter begreep hoe het werkte ging het navigeren wel beter, maa
   Wat me nog wat ingewikkelder lijkt waar ik nog mee aan de slag moet: carousel, hamburgermenu, uitklapbare menu in footer.
 
 
-  Ik heb er helaas niet echt aan gedacht om screenshots te maken tijdens het coderen, maar ik had toevallig deze wel:
+  Ik heb er helaas niet echt aan gedacht om screenshots te maken tijdens het coderen, maar ik had toevallig deze wel.
+  Ik was hier bezig met het maken en het laten werken van het hamburgermenu. Ook had ik nog een screenshot van het proces van het maken van de kaarten voor de carousel:
 
-  <img src="readme-images/screenshot1.png" width="375px" alt="Proces kaarten voor de carousel">
   <img src="readme-images/screenshot-2.png" width="375px" alt="Proces hamburgermenu en verstopte navigatie">
   <img src="readme-images/screenshot-3.png" width="375px" alt="Proces hamburgermenu en verstopte navigatie">
+  <img src="readme-images/screenshot1.png" width="375px" alt="Proces kaarten voor de carousel">
 
 
   
@@ -262,7 +263,7 @@ Toen ik even iets beter begreep hoe het werkte ging het navigeren wel beter, maa
 
 
   ### Verslag van meeting
-  Ik kon helaas niet bij het derde voortgangsgesprek zijn.
+  Ik kon helaas niet bij het 3e voortgangsgesprek zijn.
 
   Ik heb wel nog in week 8 Danny online gesproken op maandag en ben vrijdag naar een extra feedbackmoment geweest.
   Daar heb ik de volgende dingen nog opgestoken:
@@ -274,7 +275,7 @@ Toen ik even iets beter begreep hoe het werkte ging het navigeren wel beter, maa
   - Custom properties weer aangepast en verbeterd.
 
 
-  Nog screenshots van na week 7, toen ik bezig was met het responsive maken:
+  Hier heb ik nog screenshots van na week 7, toen ik bezig was met het responsive maken:
 
   <img src="readme-images/proces-footer.png" width="375px" alt="Proces van footer responsive maken">
   <img src="readme-images/proces-footer0.png" width="375px" alt="Proces van footer responsive maken">
