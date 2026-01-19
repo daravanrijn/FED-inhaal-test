@@ -277,8 +277,8 @@ Toen ik even iets beter begreep hoe het werkte ging het navigeren wel beter, maa
 
   Hier heb ik nog screenshots van na week 7, toen ik bezig was met het responsive maken:
 
-  <img src="readme-images/proces-footer.png" width="375px" alt="Proces van footer responsive maken">
   <img src="readme-images/proces-footer0.png" width="375px" alt="Proces van footer responsive maken">
+  <img src="readme-images/proces-footer.png" width="375px" alt="Proces van footer responsive maken">
   <img src="readme-images/proces-merken.png" width="375px" alt="Proces van layout van merken aanpassen voor responsive">
   
 
